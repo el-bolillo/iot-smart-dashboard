@@ -14,10 +14,12 @@ const sensorData = [
 
 export default function DashboardPage() {
   return (
-    <PageContainer title="Dashboard">
-      <Box sx={{ height: 400, width: "100%" }}>
-        <SensorChart data={sensorData} />
-      </Box>
-    </PageContainer>
+    <Box sx={{ p: 3, height: "100%" }}>
+      <PageContainer title="Dashboard">
+        <Box sx={{ height: 400, width: "100%" }}>
+          <SensorChart data={sensorData} />
+        </Box>
+      </PageContainer>
+    </Box>
   );
 }
